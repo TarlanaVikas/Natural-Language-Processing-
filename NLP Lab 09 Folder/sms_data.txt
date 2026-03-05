@@ -1,0 +1,10 @@
+spam    Win a free iPhone now! Click here
+ham Are we still meeting for lunch today?
+spam    Congratulations! You have won $1000 cash prize
+ham Don't forget to bring the documents tomorrow
+spam    Exclusive offer just for you, buy now
+ham Can you call me when you’re free?
+spam    Claim your lottery winnings immediately
+ham See you at the gym later
+spam    You’ve been selected for a free vacation
+ham Let’s catch up over coffee this weekend
