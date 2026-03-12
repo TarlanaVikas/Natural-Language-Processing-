@@ -1,6 +1,12 @@
 # 🧠 Natural Language Processing Repository
 
-This repository contains a collection of Jupyter Notebooks designed to introduce and explore fundamental concepts in **Natural Language Processing (NLP)**. Each notebook demonstrates workflows such as text preprocessing, linguistic analysis, and building simple NLP applications using Python libraries like **NLTK**.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+![NLTK](https://img.shields.io/badge/NLTK-Supported-green?logo=python)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-yellow?logo=scikit-learn)
+
+This repository contains a collection of Jupyter Notebooks designed to introduce and explore fundamental concepts in **Natural Language Processing (NLP)**.  
+Each notebook demonstrates workflows such as text preprocessing, linguistic analysis, semantic modeling, and building simple NLP applications using Python libraries like **NLTK** and **scikit‑learn**.
 
 ---
 
@@ -16,7 +22,9 @@ This repository contains a collection of Jupyter Notebooks designed to introduce
 | `NLP Lab 05 P2.ipynb`   | Extends classification with additional workflows, feature extraction, and evaluation metrics. |
 | `NLP Lab 06.ipynb`      | Explores semantic analysis, word embeddings, and vector representations of text. |
 | `NLP Lab 07.ipynb`      | Advanced preprocessing techniques, handling noisy data, and error correction in text. |
-| `NLP Lab 08/`           | Contains supporting text files and datasets for experimentation with NLP tasks. |
+| `NLP Lab 08.ipynb`      | Named Entity Recognition (NER), chunking, and working with annotated corpora. |
+| `NLP Lab 09.ipynb`      | Sentiment analysis using lexicon-based methods and supervised ML models. |
+| `NLP Lab 10.ipynb`      | Topic modeling with Latent Dirichlet Allocation (LDA) and advanced text mining. |
 | `Chatbot.ipynb`         | Implements a simple rule-based chatbot using NLTK, showcasing conversational AI basics. |
 | `README.md`             | Documentation for the repository. |
 
@@ -25,38 +33,41 @@ This repository contains a collection of Jupyter Notebooks designed to introduce
 
 ## 📂 File Details
 
-- **NLP Lab 01.ipynb**  
-  Introduces the basics of NLP, including text preprocessing techniques such as tokenization and normalization.
+- **Lab 01 – Basics**  
+  Tokenization, normalization, and introductory preprocessing.  
 
-- **NLP Lab 02.ipynb**  
-  Demonstrates tokenization methods, stemming, and lemmatization to reduce words to their root forms.
+- **Lab 02 – Stemming & Lemmatization**  
+  Reducing words to their root forms for linguistic consistency.  
 
-- **NLP Lab 03.ipynb**  
-  Focuses on stopword removal and text cleaning to prepare raw text for analysis.
+- **Lab 03 – Stopword Removal**  
+  Cleaning text by removing common but uninformative words.  
 
-- **NLP Lab 04.ipynb**  
-  Covers part-of-speech (POS) tagging and syntactic parsing to analyze sentence structure.
+- **Lab 04 – POS Tagging & Parsing**  
+  Identifying grammatical roles and sentence structures.  
 
-- **NLP Lab 05.ipynb**  
-  Introduces text classification using simple machine learning models.
+- **Lab 05 – Text Classification**  
+  Applying ML models to classify text into categories.  
 
-- **NLP Lab 05 P2.ipynb**  
-  Extends classification with additional workflows, feature extraction, and evaluation metrics.
+- **Lab 05 P2 – Extended Classification**  
+  Feature extraction, evaluation metrics, and workflow expansion.  
 
-- **NLP Lab 06.ipynb**  
-  Explores semantic analysis, word embeddings, and vector representations of text.
+- **Lab 06 – Semantic Analysis**  
+  Word embeddings, vectorization, and semantic similarity.  
 
-- **NLP Lab 07.ipynb**  
-  Advanced preprocessing techniques, handling noisy data, and error correction in text.
+- **Lab 07 – Advanced Preprocessing**  
+  Handling noisy text, spelling correction, and robust pipelines.  
 
-- **NLP Lab 08/**  
-  Contains supporting text files and datasets for experimentation with NLP tasks.
+- **Lab 08 – Named Entity Recognition**  
+  Detecting entities (names, places, organizations) and chunking.  
 
-- **Chatbot.ipynb**  
-  Implements a simple rule-based chatbot using NLTK, showcasing conversational AI basics.
+- **Lab 09 – Sentiment Analysis**  
+  Lexicon-based and ML-driven sentiment classification.  
 
-- **README.md**  
-  Documentation for the repository.
+- **Lab 10 – Topic Modeling**  
+  Discovering latent topics in text using LDA and text mining.  
+
+- **Chatbot – Conversational AI**  
+  Rule-based chatbot built with NLTK.  
 
 ---
 
@@ -66,7 +77,7 @@ This repository contains a collection of Jupyter Notebooks designed to introduce
 Ensure you have **Python ≥ 3.7** installed. Then install dependencies:
 
 ```bash
-pip install nltk
+pip install nltk scikit-learn
 ```
 
 ### 2. Importing & Setup
@@ -74,12 +85,11 @@ In your Python environment:
 
 ```python
 import nltk
-nltk.download('punkt')      # tokenizer models
-nltk.download('stopwords')  # common stopword lists
-nltk.download('wordnet')    # WordNet lexical database
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
 ```
-
-💡 Tip: Run `nltk.download()` without arguments to open the NLTK Downloader GUI and choose resources manually.
 
 ---
 
@@ -99,9 +109,9 @@ nltk.download('wordnet')    # WordNet lexical database
 
 - **Text Preprocessing**: Tokenization, stemming, lemmatization, stopword removal  
 - **Linguistic Analysis**: POS tagging, parsing, semantic reasoning  
-- **Corpora Access**: Large text datasets for training and experimentation  
-- **ML Utilities**: Feature extraction, classification, evaluation  
-- **Chatbot Demo**: Simple conversational agent using NLTK  
+- **Semantic Modeling**: Word embeddings, vectorization, similarity measures  
+- **Advanced NLP**: NER, sentiment analysis, topic modeling  
+- **Applications**: Text classification, chatbot demo  
 
 ---
 
@@ -109,6 +119,7 @@ nltk.download('wordnet')    # WordNet lexical database
 
 - Python ≥ 3.7  
 - NLTK ≥ 3.8  
+- scikit‑learn ≥ 1.0  
 - (Optional) Jupyter Notebook for interactive exploration  
 
 ---
@@ -119,3 +130,12 @@ This repository is intended for **educational purposes**. It provides a foundati
 
 ---
 
+## 🤝 Contributions
+
+Contributions are welcome! Fork the repository and submit a pull request with improvements or new NLP experiments.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
